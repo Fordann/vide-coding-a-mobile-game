@@ -6,7 +6,9 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "web": "node web/server.js",
+    "play": "node web/server.js"
   },
   "keywords": ["game", "economy", "roguelike", "mobile"],
   "author": "",

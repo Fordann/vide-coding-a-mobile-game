@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardcore Economy Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="game-header">
+            <h1>⚔️ Hardcore Economy Game</h1>
+            <div class="turn-counter">Tour: <span id="turn">1</span></div>
+        </header>
+
+        <!-- Resources Panel -->
+        <section class="resources-panel">
+            <div class="resource" id="gold-resource">
+                <span class="resource-icon">💰</span>
+                <div class="resource-info">
+                    <span class="resource-label">Gold</span>
+                    <span class="resource-value" id="gold">1000</span>
+                </div>
+            </div>
+            <div class="resource" id="info-resource">
+                <span class="resource-icon">ℹ️</span>
+                <div class="resource-info">
+                    <span class="resource-label">Info</span>
+                    <span class="resource-value" id="information">10</span>
+                </div>
+            </div>
+            <div class="resource" id="influence-resource">
+                <span class="resource-icon">👑</span>
+                <div class="resource-info">
+                    <span class="resource-label">Influence</span>
+                    <span class="resource-value" id="influence">50</span>
+                </div>
+            </div>
+            <div class="resource" id="faith-resource">
+                <span class="resource-icon">✝️</span>
+                <div class="resource-info">
+                    <span class="resource-label">Faith</span>
+                    <span class="resource-value" id="faith">100</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Political State Panel -->
+        <section class="political-panel">
+            <h2>État Politique</h2>
+            <div class="political-stats">
+                <div class="stat-bar">
+                    <label>Stabilité</label>
+                    <div class="progress-bar">
+                        <div class="progress-fill stability" id="stability-bar" style="width: 75%"></div>
+                    </div>
+                    <span id="stability-value">75</span>
+                </div>
+                <div class="stat-bar">
+                    <label>Risque Rébellion</label>
+                    <div class="progress-bar">
+                        <div class="progress-fill rebellion" id="rebellion-bar" style="width: 0%"></div>
+                    </div>
+                    <span id="rebellion-value">0</span>
+                </div>
+            </div>
+            <div class="political-status" id="political-status">Stable - Le royaume est sûr et prospère</div>
+        </section>
+
+        <!-- Tabs -->
+        <nav class="tabs">
+            <button class="tab active" data-tab="troops">🗡️ Troupes</button>
+            <button class="tab" data-tab="missions">🎯 Missions</button>
+            <button class="tab" data-tab="market">🏪 Marché</button>
+        </nav>
+
+        <!-- Content Panels -->
+        <main class="content">
+            <!-- Troops Panel -->
+            <section id="troops-panel" class="panel active">
+                <h2>Vos Troupes</h2>
+                <div id="troops-list" class="troops-list">
+                    <!-- Troops will be dynamically added here -->
+                </div>
+            </section>
+
+            <!-- Missions Panel -->
+            <section id="missions-panel" class="panel">
+                <h2>Missions Disponibles</h2>
+                <div class="active-missions">
+                    <h3>Missions Actives (<span id="active-count">0</span>/3)</h3>
+                    <div id="active-missions-list" class="missions-list">
+                        <p class="empty-state">Aucune mission en cours</p>
+                    </div>
+                </div>
+
+                <div class="available-missions">
+                    <h3>Missions Disponibles</h3>
+                    <div id="available-missions-list" class="missions-list">
+                        <!-- Missions will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Panel -->
+            <section id="market-panel" class="panel">
+                <h2>Marché</h2>
+                <div class="market-info">
+                    <p>Inflation: <span id="inflation">0.00</span>%</p>
+                </div>
+                <div id="market-list" class="market-list">
+                    <!-- Market items will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Mission Launch Modal -->
+        <div id="mission-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-mission-name">Mission</h2>
+                <div id="modal-mission-details"></div>
+
+                <div class="squad-builder">
+                    <h3>Construire l'escouade</h3>
+                    <div id="squad-selection" class="squad-selection">
+                        <!-- Available units for selection -->
+                    </div>
+                    <div id="selected-squad" class="selected-squad">
+                        <h4>Escouade Sélectionnée</h4>
+                        <div id="selected-units"></div>
+                    </div>
+                </div>
+
+                <div class="route-selection">
+                    <h3>Choisir la Route</h3>
+                    <div class="route-options">
+                        <label class="route-option">
+                            <input type="radio" name="route" value="FAST">
+                            <div class="route-card fast">
+                                <span>⚡ Rapide</span>
+                                <p>-10% puissance, +30% vitesse</p>
+                            </div>
+                        </label>
+                        <label class="route-option">
+                            <input type="radio" name="route" value="BALANCED" checked>
+                            <div class="route-card balanced">
+                                <span>⚖️ Équilibrée</span>
+                                <p>Normale</p>
+                            </div>
+                        </label>
+                        <label class="route-option">
+                            <input type="radio" name="route" value="SAFE">
+                            <div class="route-card safe">
+                                <span>🛡️ Sûre</span>
+                                <p>+10% puissance, -30% vitesse</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mission-prediction">
+                    <h3>Prédiction</h3>
+                    <div id="mission-prediction-details">
+                        <p>Sélectionnez une escouade pour voir la prédiction</p>
+                    </div>
+                </div>
+
+                <button id="launch-mission-btn" class="btn-primary" disabled>Lancer la Mission</button>
+            </div>
+        </div>
+
+        <!-- Tutorial Modal -->
+        <div id="tutorial-modal" class="modal active">
+            <div class="modal-content tutorial">
+                <h2>Bienvenue, Votre Majesté</h2>
+                <div id="tutorial-content">
+                    <p>Vous êtes le Roi. Vous ne combattez jamais. Vous décidez.</p>
+                    <p>Chaque décision a des conséquences. Chaque perte est permanente.</p>
+                    <p>Chaque victoire est obtenue par la préparation et l'information.</p>
+                    <h3>Concepts Clés:</h3>
+                    <ul>
+                        <li><strong>Composition d'escouade:</strong> Les synergies entre traits augmentent la puissance</li>
+                        <li><strong>Salaires:</strong> Sous-payer réduit les performances et la loyauté</li>
+                        <li><strong>Information:</strong> Révèle les vrais risques des missions</li>
+                        <li><strong>Déterminisme:</strong> Aucun RNG caché, tout est calculable</li>
+                    </ul>
+                </div>
+                <button id="start-game-btn" class="btn-primary">Commencer</button>
+            </div>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div id="gameover-modal" class="modal">
+            <div class="modal-content gameover">
+                <h2 id="gameover-title">Game Over</h2>
+                <div id="gameover-content"></div>
+                <button id="restart-btn" class="btn-primary">Recommencer</button>
+            </div>
+        </div>
+
+        <!-- Notification System -->
+        <div id="notifications" class="notifications"></div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
