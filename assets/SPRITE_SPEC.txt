@@ -1,0 +1,234 @@
+
+╔════════════════════════════════════════════════════════════╗
+║          SPRITE SHEET SPECIFICATION                        ║
+╚════════════════════════════════════════════════════════════╝
+
+Sheet Size: 640x640 pixels
+Grid: 5x5 (25 sprites)
+Individual Sprite Size: 128x128 pixels
+Format: PNG with transparency
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SPRITE LIST:
+
+
+#00 - KING
+   Description: King/Player Avatar
+   Grid Position: Row 0, Col 0
+   Pixel Position: (0, 0)
+   Color: #FFD700
+   Symbol: ♔
+
+#01 - SCOUT
+   Description: Scout Unit
+   Grid Position: Row 0, Col 1
+   Pixel Position: (128, 0)
+   Color: #90EE90
+   Symbol: 👁
+
+#02 - TRADER
+   Description: Trader Unit
+   Grid Position: Row 0, Col 2
+   Pixel Position: (256, 0)
+   Color: #87CEEB
+   Symbol: ⚖
+
+#03 - DIPLOMAT
+   Description: Diplomat Unit
+   Grid Position: Row 0, Col 3
+   Pixel Position: (384, 0)
+   Color: #DDA0DD
+   Symbol: 🗨
+
+#04 - ENFORCER
+   Description: Enforcer Unit
+   Grid Position: Row 0, Col 4
+   Pixel Position: (512, 0)
+   Color: #CD5C5C
+   Symbol: ⚔
+
+#05 - WEAPON
+   Description: Weapon Equipment
+   Grid Position: Row 1, Col 0
+   Pixel Position: (0, 128)
+   Color: #C0C0C0
+   Symbol: 🗡
+
+#06 - ARMOR
+   Description: Armor Equipment
+   Grid Position: Row 1, Col 1
+   Pixel Position: (128, 128)
+   Color: #B8860B
+   Symbol: 🛡
+
+#07 - BAG
+   Description: Bag/Chest
+   Grid Position: Row 1, Col 2
+   Pixel Position: (256, 128)
+   Color: #8B4513
+   Symbol: 📦
+
+#08 - SCROLL
+   Description: Scroll/Document
+   Grid Position: Row 1, Col 3
+   Pixel Position: (384, 128)
+   Color: #F5DEB3
+   Symbol: 📜
+
+#09 - HORSE
+   Description: Mount/Transport
+   Grid Position: Row 1, Col 4
+   Pixel Position: (512, 128)
+   Color: #A0522D
+   Symbol: 🐴
+
+#10 - GOLD
+   Description: Gold Resource
+   Grid Position: Row 2, Col 0
+   Pixel Position: (0, 256)
+   Color: #FFD700
+   Symbol: 💰
+
+#11 - INFORMATION
+   Description: Information Resource
+   Grid Position: Row 2, Col 1
+   Pixel Position: (128, 256)
+   Color: #4169E1
+   Symbol: ℹ
+
+#12 - INFLUENCE
+   Description: Influence Resource
+   Grid Position: Row 2, Col 2
+   Pixel Position: (256, 256)
+   Color: #9370DB
+   Symbol: 👑
+
+#13 - FAITH
+   Description: Faith Resource
+   Grid Position: Row 2, Col 3
+   Pixel Position: (384, 256)
+   Color: #F0E68C
+   Symbol: ✝
+
+#14 - TRADE_GOODS
+   Description: Trade Goods
+   Grid Position: Row 2, Col 4
+   Pixel Position: (512, 256)
+   Color: #DEB887
+   Symbol: 📦
+
+#15 - SUCCESS
+   Description: Success Effect
+   Grid Position: Row 3, Col 0
+   Pixel Position: (0, 384)
+   Color: #00FF00
+   Symbol: ✓
+
+#16 - FAILURE
+   Description: Failure Effect
+   Grid Position: Row 3, Col 1
+   Pixel Position: (128, 384)
+   Color: #FF0000
+   Symbol: ✗
+
+#17 - WOUNDED
+   Description: Wounded Status
+   Grid Position: Row 3, Col 2
+   Pixel Position: (256, 384)
+   Color: #8B0000
+   Symbol: 🩸
+
+#18 - FATIGUED
+   Description: Fatigue Status
+   Grid Position: Row 3, Col 3
+   Pixel Position: (384, 384)
+   Color: #696969
+   Symbol: 😴
+
+#19 - DEAD
+   Description: Death Marker
+   Grid Position: Row 3, Col 4
+   Pixel Position: (512, 384)
+   Color: #000000
+   Symbol: 💀
+
+#20 - MISSION_ICON
+   Description: Mission Icon
+   Grid Position: Row 4, Col 0
+   Pixel Position: (0, 512)
+   Color: #FF8C00
+   Symbol: 🎯
+
+#21 - REBELLION
+   Description: Rebellion Warning
+   Grid Position: Row 4, Col 1
+   Pixel Position: (128, 512)
+   Color: #DC143C
+   Symbol: ⚠
+
+#22 - MARKET
+   Description: Market Icon
+   Grid Position: Row 4, Col 2
+   Pixel Position: (256, 512)
+   Color: #32CD32
+   Symbol: 🏪
+
+#23 - ROUTE_FAST
+   Description: Fast Route
+   Grid Position: Row 4, Col 3
+   Pixel Position: (384, 512)
+   Color: #FF4500
+   Symbol: ⚡
+
+#24 - ROUTE_SAFE
+   Description: Safe Route
+   Grid Position: Row 4, Col 4
+   Pixel Position: (512, 512)
+   Color: #228B22
+   Symbol: 🛡
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+USAGE IN GAME:
+
+To extract individual sprites in Unity/Godot:
+1. Import spritesheet.png
+2. Set Sprite Mode to Multiple
+3. Use the sprite-mapping.json to define slice rectangles
+4. Each sprite is 128x128 with known positions
+
+Example (Unity):
+- Import Settings → Sprite Mode: Multiple
+- Sprite Editor → Slice → Grid By Cell Size: 128x128
+
+Example (Godot):
+- Import as Texture
+- Create AtlasTexture resources for each sprite
+- Use positions from sprite-mapping.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COLOR PALETTE:
+
+Characters (warm tones):
+- King: #FFD700 (Gold)
+- Scout: #90EE90 (Light Green)
+- Trader: #87CEEB (Sky Blue)
+- Diplomat: #DDA0DD (Plum)
+- Enforcer: #CD5C5C (Indian Red)
+
+Resources (cool tones):
+- Gold: #FFD700
+- Information: #4169E1 (Royal Blue)
+- Influence: #9370DB (Medium Purple)
+- Faith: #F0E68C (Khaki)
+
+Effects (special):
+- Success: #00FF00 (Bright Green)
+- Failure: #FF0000 (Red)
+- Wounded: #8B0000 (Dark Red)
+- Fatigue: #696969 (Dim Gray)
+- Death: #000000 (Black)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

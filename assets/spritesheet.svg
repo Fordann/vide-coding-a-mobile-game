@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <title>Hardcore Economy Game Sprite Sheet</title>
+  <desc>5x5 Grid of 128x128 sprites for mobile game</desc>
+
+  <!-- Grid lines for reference (can be removed) -->
+  <g id="grid" opacity="0.2">
+    <line x1="128" y1="0" x2="128" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="256" y1="0" x2="256" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="384" y1="0" x2="384" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="512" y1="0" x2="512" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="640" y1="0" x2="640" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="768" y1="0" x2="768" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="896" y1="0" x2="896" y2="1024" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="128" x2="1024" y2="128" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="256" x2="1024" y2="256" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="384" x2="1024" y2="384" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="512" x2="1024" y2="512" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="640" x2="1024" y2="640" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="768" x2="1024" y2="768" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="896" x2="1024" y2="896" stroke="black" stroke-width="1"/>
+  </g>
+
+  <!-- Row 1: Characters -->
+  <!-- #0 King -->
+  <g id="king" transform="translate(0, 0)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#FFD700" opacity="0.9"/>
+    <text x="64" y="75" font-family="Arial" font-size="48" text-anchor="middle" fill="white">♔</text>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">KING</text>
+  </g>
+
+  <!-- #1 Scout -->
+  <g id="scout" transform="translate(128, 0)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#90EE90" opacity="0.9"/>
+    <circle cx="64" cy="50" r="25" fill="white" opacity="0.3"/>
+    <circle cx="64" cy="50" r="15" fill="#333"/>
+    <circle cx="64" cy="50" r="8" fill="white"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">SCOUT</text>
+  </g>
+
+  <!-- #2 Trader -->
+  <g id="trader" transform="translate(256, 0)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#87CEEB" opacity="0.9"/>
+    <line x1="40" y1="50" x2="88" y2="50" stroke="white" stroke-width="4"/>
+    <line x1="64" y1="30" x2="64" y2="70" stroke="white" stroke-width="4"/>
+    <circle cx="40" cy="50" r="8" fill="white"/>
+    <circle cx="88" cy="50" r="8" fill="white"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">TRADER</text>
+  </g>
+
+  <!-- #3 Diplomat -->
+  <g id="diplomat" transform="translate(384, 0)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#DDA0DD" opacity="0.9"/>
+    <ellipse cx="64" cy="50" rx="35" ry="25" fill="white" opacity="0.3"/>
+    <path d="M 40,45 Q 64,35 88,45" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="50" cy="40" r="3" fill="white"/>
+    <circle cx="78" cy="40" r="3" fill="white"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">DIPLOMAT</text>
+  </g>
+
+  <!-- #4 Enforcer -->
+  <g id="enforcer" transform="translate(512, 0)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#CD5C5C" opacity="0.9"/>
+    <line x1="50" y1="30" x2="78" y2="70" stroke="white" stroke-width="4"/>
+    <line x1="78" y1="30" x2="50" y2="70" stroke="white" stroke-width="4"/>
+    <circle cx="64" cy="50" r="8" fill="white"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">ENFORCER</text>
+  </g>
+
+  <!-- Row 2: Equipment -->
+  <!-- #5 Weapon -->
+  <g id="weapon" transform="translate(0, 128)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#C0C0C0" opacity="0.9"/>
+    <polygon points="64,25 74,45 64,85 54,45" fill="white"/>
+    <rect x="58" y="80" width="12" height="25" fill="#8B4513"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">WEAPON</text>
+  </g>
+
+  <!-- #6 Armor -->
+  <g id="armor" transform="translate(128, 128)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#B8860B" opacity="0.9"/>
+    <path d="M 64,30 L 45,50 L 45,75 L 64,85 L 83,75 L 83,50 Z" fill="white" opacity="0.7"/>
+    <line x1="64" y1="40" x2="64" y2="75" stroke="#333" stroke-width="2"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">ARMOR</text>
+  </g>
+
+  <!-- #7 Bag -->
+  <g id="bag" transform="translate(256, 128)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#8B4513" opacity="0.9"/>
+    <rect x="40" y="40" width="48" height="40" fill="white" opacity="0.6"/>
+    <rect x="40" y="35" width="48" height="10" fill="#DEB887"/>
+    <circle cx="64" cy="65" r="5" fill="#333"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">BAG</text>
+  </g>
+
+  <!-- #8 Scroll -->
+  <g id="scroll" transform="translate(384, 128)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#F5DEB3" opacity="0.9"/>
+    <rect x="45" y="35" width="38" height="50" fill="white" opacity="0.8" rx="3"/>
+    <line x1="50" y1="45" x2="78" y2="45" stroke="#333" stroke-width="1"/>
+    <line x1="50" y1="55" x2="78" y2="55" stroke="#333" stroke-width="1"/>
+    <line x1="50" y1="65" x2="78" y2="65" stroke="#333" stroke-width="1"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">SCROLL</text>
+  </g>
+
+  <!-- #9 Horse -->
+  <g id="horse" transform="translate(512, 128)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#A0522D" opacity="0.9"/>
+    <ellipse cx="64" cy="60" rx="30" ry="20" fill="white" opacity="0.6"/>
+    <circle cx="55" cy="55" r="4" fill="white"/>
+    <path d="M 45,45 L 40,35 L 50,40" stroke="white" stroke-width="2" fill="none"/>
+    <line x1="50" y1="75" x2="45" y2="90" stroke="white" stroke-width="3"/>
+    <line x1="78" y1="75" x2="83" y2="90" stroke="white" stroke-width="3"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">HORSE</text>
+  </g>
+
+  <!-- Row 3: Resources -->
+  <!-- #10 Gold -->
+  <g id="gold" transform="translate(0, 256)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#FFD700" opacity="0.9"/>
+    <circle cx="64" cy="50" r="25" fill="white" opacity="0.8"/>
+    <text x="64" y="60" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#B8860B">G</text>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">GOLD</text>
+  </g>
+
+  <!-- #11 Information -->
+  <g id="information" transform="translate(128, 256)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#4169E1" opacity="0.9"/>
+    <circle cx="64" cy="50" r="25" fill="white" opacity="0.8"/>
+    <text x="64" y="65" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#4169E1">i</text>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">INFO</text>
+  </g>
+
+  <!-- #12 Influence -->
+  <g id="influence" transform="translate(256, 256)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#9370DB" opacity="0.9"/>
+    <polygon points="64,30 70,48 88,48 74,60 79,78 64,68 49,78 54,60 40,48 58,48" fill="white" opacity="0.8"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">INFLUENCE</text>
+  </g>
+
+  <!-- #13 Faith -->
+  <g id="faith" transform="translate(384, 256)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#F0E68C" opacity="0.9"/>
+    <line x1="64" y1="30" x2="64" y2="75" stroke="white" stroke-width="6"/>
+    <line x1="45" y1="45" x2="83" y2="45" stroke="white" stroke-width="6"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">FAITH</text>
+  </g>
+
+  <!-- #14 Trade Goods -->
+  <g id="trade_goods" transform="translate(512, 256)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#DEB887" opacity="0.9"/>
+    <rect x="40" y="40" width="20" height="25" fill="white" opacity="0.6"/>
+    <rect x="68" y="40" width="20" height="25" fill="white" opacity="0.6"/>
+    <rect x="54" y="55" width="20" height="25" fill="white" opacity="0.8"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">GOODS</text>
+  </g>
+
+  <!-- Row 4: Status Effects -->
+  <!-- #15 Success -->
+  <g id="success" transform="translate(0, 384)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#00FF00" opacity="0.9"/>
+    <polyline points="35,55 55,75 95,35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">SUCCESS</text>
+  </g>
+
+  <!-- #16 Failure -->
+  <g id="failure" transform="translate(128, 384)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#FF0000" opacity="0.9"/>
+    <line x1="40" y1="40" x2="88" y2="88" stroke="white" stroke-width="8" stroke-linecap="round"/>
+    <line x1="88" y1="40" x2="40" y2="88" stroke="white" stroke-width="8" stroke-linecap="round"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">FAILURE</text>
+  </g>
+
+  <!-- #17 Wounded -->
+  <g id="wounded" transform="translate(256, 384)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#8B0000" opacity="0.9"/>
+    <ellipse cx="50" cy="50" rx="8" ry="12" fill="#FF0000"/>
+    <ellipse cx="70" cy="55" rx="6" ry="10" fill="#FF0000"/>
+    <ellipse cx="60" cy="70" rx="7" ry="11" fill="#FF0000"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">WOUNDED</text>
+  </g>
+
+  <!-- #18 Fatigued -->
+  <g id="fatigued" transform="translate(384, 384)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#696969" opacity="0.9"/>
+    <text x="64" y="70" font-family="Arial" font-size="48" text-anchor="middle" fill="white">Z</text>
+    <text x="74" y="55" font-family="Arial" font-size="36" text-anchor="middle" fill="white" opacity="0.7">z</text>
+    <text x="80" y="45" font-family="Arial" font-size="24" text-anchor="middle" fill="white" opacity="0.5">z</text>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">FATIGUE</text>
+  </g>
+
+  <!-- #19 Dead -->
+  <g id="dead" transform="translate(512, 384)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#000000" opacity="0.9"/>
+    <ellipse cx="64" cy="40" rx="20" ry="22" fill="white"/>
+    <ellipse cx="64" cy="70" rx="15" ry="18" fill="white"/>
+    <circle cx="60" cy="35" r="3" fill="#000"/>
+    <circle cx="68" cy="35" r="3" fill="#000"/>
+    <line x1="55" y1="43" x2="73" y2="43" stroke="#000" stroke-width="2"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">DEAD</text>
+  </g>
+
+  <!-- Row 5: UI Elements -->
+  <!-- #20 Mission Icon -->
+  <g id="mission_icon" transform="translate(0, 512)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#FF8C00" opacity="0.9"/>
+    <circle cx="64" cy="50" r="30" fill="white" opacity="0.3"/>
+    <circle cx="64" cy="50" r="20" fill="white" opacity="0.5"/>
+    <circle cx="64" cy="50" r="10" fill="white" opacity="0.8"/>
+    <circle cx="64" cy="50" r="4" fill="#FF0000"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">MISSION</text>
+  </g>
+
+  <!-- #21 Rebellion -->
+  <g id="rebellion" transform="translate(128, 512)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#DC143C" opacity="0.9"/>
+    <polygon points="64,25 74,45 95,45 78,58 84,78 64,65 44,78 50,58 33,45 54,45" fill="#FFD700"/>
+    <text x="64" y="65" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#000">!</text>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">REBELLION</text>
+  </g>
+
+  <!-- #22 Market -->
+  <g id="market" transform="translate(256, 512)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#32CD32" opacity="0.9"/>
+    <rect x="40" y="50" width="48" height="35" fill="white" opacity="0.7"/>
+    <polygon points="40,50 64,30 88,50" fill="white" opacity="0.6"/>
+    <rect x="50" y="60" width="10" height="15" fill="#333"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">MARKET</text>
+  </g>
+
+  <!-- #23 Route Fast -->
+  <g id="route_fast" transform="translate(384, 512)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#FF4500" opacity="0.9"/>
+    <polygon points="50,50 64,30 64,45 78,25 78,50 64,70 64,55 50,75" fill="#FFFF00"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">FAST</text>
+  </g>
+
+  <!-- #24 Route Safe -->
+  <g id="route_safe" transform="translate(512, 512)">
+    <rect x="8" y="8" width="112" height="112" rx="10" fill="#228B22" opacity="0.9"/>
+    <path d="M 64,30 L 45,50 L 45,75 L 64,85 L 83,75 L 83,50 Z" fill="white" opacity="0.8"/>
+    <polyline points="50,55 58,65 78,45" stroke="#228B22" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="64" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="white">SAFE</text>
+  </g>
+</svg>

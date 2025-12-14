@@ -1,0 +1,19 @@
+{
+  "name": "hardcore-economy-game",
+  "version": "1.0.0",
+  "description": "Hardcore economic survival roguelike mobile game",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["game", "economy", "roguelike", "mobile"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

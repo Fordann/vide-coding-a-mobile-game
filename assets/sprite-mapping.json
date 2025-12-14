@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "sheet_size": 640,
+    "sprite_size": 128,
+    "grid_size": 5,
+    "total_sprites": 25
+  },
+  "sprites": {
+    "king": {
+      "id": 0,
+      "description": "King/Player Avatar",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 0,
+        "col": 0
+      },
+      "color": "#FFD700",
+      "symbol": "\u2654"
+    },
+    "scout": {
+      "id": 1,
+      "description": "Scout Unit",
+      "position": {
+        "x": 128,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 0,
+        "col": 1
+      },
+      "color": "#90EE90",
+      "symbol": "\ud83d\udc41"
+    },
+    "trader": {
+      "id": 2,
+      "description": "Trader Unit",
+      "position": {
+        "x": 256,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 0,
+        "col": 2
+      },
+      "color": "#87CEEB",
+      "symbol": "\u2696"
+    },
+    "diplomat": {
+      "id": 3,
+      "description": "Diplomat Unit",
+      "position": {
+        "x": 384,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 0,
+        "col": 3
+      },
+      "color": "#DDA0DD",
+      "symbol": "\ud83d\udde8"
+    },
+    "enforcer": {
+      "id": 4,
+      "description": "Enforcer Unit",
+      "position": {
+        "x": 512,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 0,
+        "col": 4
+      },
+      "color": "#CD5C5C",
+      "symbol": "\u2694"
+    },
+    "weapon": {
+      "id": 5,
+      "description": "Weapon Equipment",
+      "position": {
+        "x": 0,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 1,
+        "col": 0
+      },
+      "color": "#C0C0C0",
+      "symbol": "\ud83d\udde1"
+    },
+    "armor": {
+      "id": 6,
+      "description": "Armor Equipment",
+      "position": {
+        "x": 128,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 1,
+        "col": 1
+      },
+      "color": "#B8860B",
+      "symbol": "\ud83d\udee1"
+    },
+    "bag": {
+      "id": 7,
+      "description": "Bag/Chest",
+      "position": {
+        "x": 256,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 1,
+        "col": 2
+      },
+      "color": "#8B4513",
+      "symbol": "\ud83d\udce6"
+    },
+    "scroll": {
+      "id": 8,
+      "description": "Scroll/Document",
+      "position": {
+        "x": 384,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 1,
+        "col": 3
+      },
+      "color": "#F5DEB3",
+      "symbol": "\ud83d\udcdc"
+    },
+    "horse": {
+      "id": 9,
+      "description": "Mount/Transport",
+      "position": {
+        "x": 512,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 1,
+        "col": 4
+      },
+      "color": "#A0522D",
+      "symbol": "\ud83d\udc34"
+    },
+    "gold": {
+      "id": 10,
+      "description": "Gold Resource",
+      "position": {
+        "x": 0,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 2,
+        "col": 0
+      },
+      "color": "#FFD700",
+      "symbol": "\ud83d\udcb0"
+    },
+    "information": {
+      "id": 11,
+      "description": "Information Resource",
+      "position": {
+        "x": 128,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 2,
+        "col": 1
+      },
+      "color": "#4169E1",
+      "symbol": "\u2139"
+    },
+    "influence": {
+      "id": 12,
+      "description": "Influence Resource",
+      "position": {
+        "x": 256,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 2,
+        "col": 2
+      },
+      "color": "#9370DB",
+      "symbol": "\ud83d\udc51"
+    },
+    "faith": {
+      "id": 13,
+      "description": "Faith Resource",
+      "position": {
+        "x": 384,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 2,
+        "col": 3
+      },
+      "color": "#F0E68C",
+      "symbol": "\u271d"
+    },
+    "trade_goods": {
+      "id": 14,
+      "description": "Trade Goods",
+      "position": {
+        "x": 512,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 2,
+        "col": 4
+      },
+      "color": "#DEB887",
+      "symbol": "\ud83d\udce6"
+    },
+    "success": {
+      "id": 15,
+      "description": "Success Effect",
+      "position": {
+        "x": 0,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 3,
+        "col": 0
+      },
+      "color": "#00FF00",
+      "symbol": "\u2713"
+    },
+    "failure": {
+      "id": 16,
+      "description": "Failure Effect",
+      "position": {
+        "x": 128,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 3,
+        "col": 1
+      },
+      "color": "#FF0000",
+      "symbol": "\u2717"
+    },
+    "wounded": {
+      "id": 17,
+      "description": "Wounded Status",
+      "position": {
+        "x": 256,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 3,
+        "col": 2
+      },
+      "color": "#8B0000",
+      "symbol": "\ud83e\ude78"
+    },
+    "fatigued": {
+      "id": 18,
+      "description": "Fatigue Status",
+      "position": {
+        "x": 384,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 3,
+        "col": 3
+      },
+      "color": "#696969",
+      "symbol": "\ud83d\ude34"
+    },
+    "dead": {
+      "id": 19,
+      "description": "Death Marker",
+      "position": {
+        "x": 512,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 3,
+        "col": 4
+      },
+      "color": "#000000",
+      "symbol": "\ud83d\udc80"
+    },
+    "mission_icon": {
+      "id": 20,
+      "description": "Mission Icon",
+      "position": {
+        "x": 0,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 4,
+        "col": 0
+      },
+      "color": "#FF8C00",
+      "symbol": "\ud83c\udfaf"
+    },
+    "rebellion": {
+      "id": 21,
+      "description": "Rebellion Warning",
+      "position": {
+        "x": 128,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 4,
+        "col": 1
+      },
+      "color": "#DC143C",
+      "symbol": "\u26a0"
+    },
+    "market": {
+      "id": 22,
+      "description": "Market Icon",
+      "position": {
+        "x": 256,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 4,
+        "col": 2
+      },
+      "color": "#32CD32",
+      "symbol": "\ud83c\udfea"
+    },
+    "route_fast": {
+      "id": 23,
+      "description": "Fast Route",
+      "position": {
+        "x": 384,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 4,
+        "col": 3
+      },
+      "color": "#FF4500",
+      "symbol": "\u26a1"
+    },
+    "route_safe": {
+      "id": 24,
+      "description": "Safe Route",
+      "position": {
+        "x": 512,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      },
+      "grid": {
+        "row": 4,
+        "col": 4
+      },
+      "color": "#228B22",
+      "symbol": "\ud83d\udee1"
+    }
+  }
+}
