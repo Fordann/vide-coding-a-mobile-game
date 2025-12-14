@@ -2,7 +2,7 @@
  * Mission system with deterministic outcomes
  */
 
-import { MissionType, MissionStatus, RouteType, Resources } from '../core/types';
+import { MissionType, MissionStatus, RouteType, Resources, UnitStatus } from '../core/types';
 import { Unit } from '../troops/unit';
 import { calculateSynergyBonus, calculateTraitPowerModifier, calculateTraitDefenseBonus } from '../troops/traits';
 
@@ -152,8 +152,8 @@ export class Mission {
     this.status = MissionStatus.IN_PROGRESS;
     this.startTime = Date.now();
 
-    for (const unit of this.squad) {
-      unit.status = 'ON_MISSION';
+      for (const unit of this.squad) {
+        unit.status = UnitStatus.ON_MISSION;
     }
   }
 
@@ -233,9 +233,9 @@ export class Mission {
 
     // Add fatigue to survivors
     for (const unit of this.squad) {
-      if (unit.status !== 'DEAD') {
+      if (unit.status !== UnitStatus.DEAD) {
         unit.addFatigue(10);
-        unit.status = unit.status === 'WOUNDED' ? 'WOUNDED' : 'READY';
+        unit.status = unit.status === UnitStatus.WOUNDED ? UnitStatus.WOUNDED : UnitStatus.READY;
       }
     }
 

@@ -15,7 +15,7 @@ export const TRAITS: Record<TraitType, Trait> = {
   [TraitType.GREEDY]: {
     type: TraitType.GREEDY,
     powerModifier: 0.8,
-    synergyWith: [TraitType.TRADER],
+    synergyWith: [],
     defenseBonus: -1,
     description: 'Motivated by gold, -20% power unless overpaid, synergy with Trader'
   },
@@ -43,21 +43,21 @@ export const TRAITS: Record<TraitType, Trait> = {
   [TraitType.ELOQUENT]: {
     type: TraitType.ELOQUENT,
     powerModifier: 1.0,
-    synergyWith: [TraitType.DIPLOMAT],
+    synergyWith: [],
     defenseBonus: 0,
     description: 'Persuasive, bonus to diplomatic missions'
   },
   [TraitType.INTIMIDATING]: {
     type: TraitType.INTIMIDATING,
     powerModifier: 1.1,
-    synergyWith: [TraitType.ENFORCER],
+    synergyWith: [],
     defenseBonus: 1,
     description: 'Feared, +10% power, synergy with Enforcer'
   },
   [TraitType.QUICK]: {
     type: TraitType.QUICK,
     powerModifier: 1.05,
-    synergyWith: [TraitType.SCOUT],
+    synergyWith: [],
     defenseBonus: 2,
     description: 'Fast, +5% power, high defense, synergy with Scout'
   },
